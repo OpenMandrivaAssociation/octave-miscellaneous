@@ -1,6 +1,6 @@
 %define	pkgname miscellaneous
 %define name	octave-%{pkgname}
-%define version 1.0.10
+%define version 1.0.11
 %define release %mkrel 1
 
 Summary:	Miscellaneous Octave tools that don't fit elsewhere
