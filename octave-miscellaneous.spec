@@ -4,10 +4,10 @@ Summary:	Miscellaneous tools that don't fit somewhere else
 Name:		octave-%{octpkg}
 Version:	1.3.0
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 
 BuildRequires:	octave-devel >= 3.6.0
 BuildRequires:	ncurses-devel
@@ -22,8 +22,6 @@ Requires(postun): octave
 
 %description
 Miscellaneous tools that don't fit somewhere else.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
