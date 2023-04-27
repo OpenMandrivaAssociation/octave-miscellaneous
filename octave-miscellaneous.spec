@@ -1,18 +1,19 @@
 %global octpkg miscellaneous
 
 Summary:	Miscellaneous tools that don't fit somewhere else
-Name:		octave-%{octpkg}
+Name:		octave-miscellaneous
 Version:	1.3.0
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+Url:		https://packages.octave.org/miscellaneous/
+Source0:	https://downloads.sourceforge.net/octave/miscellaneous-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 3.6.0
+BuildRequires:	octave-devel >= 3.8.0
 BuildRequires:	ncurses-devel
 #BuildRequires:	termcap-devel
 BuildRequires:	units
+
 
 Requires:	octave(api) = %{octave_api}
 Requires:	units
@@ -26,18 +27,15 @@ Miscellaneous tools that don't fit somewhere else.
 %files
 %license COPYING
 %doc NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
 
 #---------------------------------------------------------------------------
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %set_build_flags
