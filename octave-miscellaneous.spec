@@ -3,7 +3,7 @@
 Summary:	Miscellaneous tools that don't fit somewhere else
 Name:		octave-miscellaneous
 Version:	1.3.1
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/miscellaneous/
